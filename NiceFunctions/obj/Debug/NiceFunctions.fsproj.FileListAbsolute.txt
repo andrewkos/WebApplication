@@ -1,0 +1,7 @@
+C:\Users\Andrew\Documents\Visual Studio 14\Projects\WebApplication\WebApplication\NiceFunctions\bin\Debug\NiceFunctions.XML
+C:\Users\Andrew\Documents\Visual Studio 14\Projects\WebApplication\WebApplication\NiceFunctions\bin\Debug\NiceFunctions.dll
+C:\Users\Andrew\Documents\Visual Studio 14\Projects\WebApplication\WebApplication\NiceFunctions\bin\Debug\NiceFunctions.pdb
+C:\Users\Andrew\Documents\Visual Studio 14\Projects\WebApplication\WebApplication\NiceFunctions\bin\Debug\FSharp.Core.dll
+C:\Users\Andrew\Documents\Visual Studio 14\Projects\WebApplication\WebApplication\NiceFunctions\bin\Debug\FSharp.Core.xml
+C:\Users\Andrew\Documents\Visual Studio 14\Projects\WebApplication\WebApplication\NiceFunctions\obj\Debug\NiceFunctions.dll
+C:\Users\Andrew\Documents\Visual Studio 14\Projects\WebApplication\WebApplication\NiceFunctions\obj\Debug\NiceFunctions.pdb

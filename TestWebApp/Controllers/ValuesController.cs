@@ -14,7 +14,10 @@ namespace TestWebApp.Controllers
         public string Get()
         {
             string userRequest = this.Url.Request.RequestUri.PathAndQuery.Substring(12);
-            return "The time is " + System.DateTime.Now.ToShortTimeString() + ", and I hate " + userRequest;
+            string serverPath = System.Web.HttpContext.Current.Server.MapPath("~");
+            NiceFunctions.helloWorld.writeMessage(serverPath,userRequest);
+            
+            return "The time is " + System.DateTime.Now.ToShortTimeString() + ", and I've had the following messages " + NiceFunctions.helloWorld.readMessage(serverPath);
             //return new string[] { "value1", "value2" };
         }
 
