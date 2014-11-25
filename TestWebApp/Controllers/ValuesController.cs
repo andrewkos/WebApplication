@@ -11,16 +11,17 @@ namespace TestWebApp.Controllers
     public class ValuesController : ApiController
     {
         // GET api/values
-        public IEnumerable<string> Get()
+        public string Get()
         {
-            return new string[] { "value1", "value2" };
+            return this.Url.Request.RequestUri.PathAndQuery;
+            //return new string[] { "value1", "value2" };
         }
 
         // GET api/values/5
-        public string Get(int id)
-        {
-            return "value";
-        }
+      //  public string Get(int id)
+      //  {
+      //      return "value";
+      //  }
 
         public string Get(string message)
         {
