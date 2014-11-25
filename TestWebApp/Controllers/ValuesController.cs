@@ -13,7 +13,8 @@ namespace TestWebApp.Controllers
         // GET api/values
         public string Get()
         {
-            return this.Url.Request.RequestUri.PathAndQuery;
+            string userRequest = this.Url.Request.RequestUri.PathAndQuery.Substring(12);
+            return "The time is " + System.DateTime.Now.ToShortTimeString() + ", and I hate " + userRequest;
             //return new string[] { "value1", "value2" };
         }
 
