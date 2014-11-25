@@ -14,7 +14,8 @@ namespace TestWebApp.Controllers
         public string Get()
         {
             string userRequest = this.Url.Request.RequestUri.PathAndQuery.Substring(12);
-            string serverPath = System.Web.HttpContext.Current.Server.MapPath("~");
+            //string serverPath = System.Web.HttpContext.Current.Server.MapPath("~");
+            string serverPath = System.IO.Path.GetTempPath();
             NiceFunctions.helloWorld.writeMessage(serverPath,userRequest);
             
             return "The time is " + System.DateTime.Now.ToShortTimeString() + ", and I've had the following messages " + NiceFunctions.helloWorld.readMessage(serverPath);
