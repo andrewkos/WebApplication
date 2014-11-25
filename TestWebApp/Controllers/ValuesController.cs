@@ -22,6 +22,11 @@ namespace TestWebApp.Controllers
             return "value";
         }
 
+        public string Get(string message)
+        {
+            return "The time is " + System.DateTime.Now.ToShortTimeString() + ", and I hate " + message;
+        }
+
         // POST api/values
         public string Post([FromBody]string value)
         {
